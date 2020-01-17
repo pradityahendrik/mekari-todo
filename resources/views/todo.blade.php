@@ -86,14 +86,14 @@
                                 type: 'get',
                                 cache: false,
                                 success: function(res){
-                                    $('#list-todo').prepend(
+                                    $('#list-todo').append(
                                         '<li class="list-group-item">'+
                                             '<div class="form-check">'+
                                                 '<input class="form-check-input" type="checkbox" id="'+res.id+'">'+
                                                 '<label class="form-check-label" for="'+res.id+'">'+res.name+' [X]</label>'+
                                             '</div>'+
                                         '</li>'
-                                    );
+                                    ).after($('#delete-todo'));
 
                                     if (res) {
                                         $('#delete-todo').removeAttr('hidden');
