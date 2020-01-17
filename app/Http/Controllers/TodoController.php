@@ -15,4 +15,18 @@ class TodoController extends Controller{
     public function list(){
         return $this->todo->list();
     }
+
+    public function add(Request $req){
+        $this->todo->add($req);
+        return response()->json([
+            'msg' => 'Success'
+        ], 200);
+    }
+
+    public function deleteTodo(Request $req){
+        $this->todo->deleteTodo($req);
+        return response()->json([
+            'msg' => 'Success'
+        ], 200);
+    }
 }

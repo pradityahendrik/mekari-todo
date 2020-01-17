@@ -17,4 +17,6 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'api'], function(){
     Route::get('/todo', 'TodoController@list');
+    Route::post('/todo', 'TodoController@add');
+    Route::post('/todo/delete', 'TodoController@deleteTodo');
 });
