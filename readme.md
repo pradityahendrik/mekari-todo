@@ -12,7 +12,7 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 
 ## Getting Started 
 
-After clone repositories, install package and then type this command in terminal
+After clone repositories, install package, type this command in terminal
 
 ```php
 composer install
@@ -26,8 +26,8 @@ php key artisan:generate
 
 Don't forget to import database, you can find database schema on *data* folder in root project
 
-Run on your local machine, landing page on 
-```url
+Run on your local machine
+```link
  localhost/mekari-todo/public
 ```
 
