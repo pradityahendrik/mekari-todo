@@ -10,6 +10,29 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
+## Getting Started 
+
+After clone repositories, install package and then type this command in terminal
+
+```php
+composer install
+```
+
+Generate artisan key
+
+```php
+php key artisan:generate
+```
+
+Don't forget to import database, you can find database schema on *data* folder in root project
+
+Run on your local machine, landing page on 
+```url
+ localhost/mekari-todo/public
+```
+
+You are ready to make your todo list.
+
 ## Official Documentation
 
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
