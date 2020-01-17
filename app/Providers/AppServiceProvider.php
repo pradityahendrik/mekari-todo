@@ -23,6 +23,16 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $models = [
+            'Todo'
+          ];
+    
+          foreach($models as $m){
+            $this->app->bind(
+              "App\\Contracts\\{$m}",
+              "App\\Services\\{$m}Service"
+            );
+          }
+    
     }
 }

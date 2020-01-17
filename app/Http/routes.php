@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('todo');
+});
+
+Route::group(['prefix' => 'api'], function(){
+    Route::get('/todo', 'TodoController@list');
 });
